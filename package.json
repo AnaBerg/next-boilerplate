@@ -4,13 +4,14 @@
   "private": true,
   "scripts": {
     "start": "next dev --turbo",
-    "start:docs": "storybook dev -p 6006",
+    "start:docs": "storybook dev -p 4000",
     "build": "next build",
     "build:docs": "storybook build",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "prettier": "prettier --write \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml,yml}\"",
-    "test": "jest",
+    "test": "jest && playwright test",
+    "test:unit": "jest",
     "test:e2e": "playwright test",
     "prepare": "husky"
   },
