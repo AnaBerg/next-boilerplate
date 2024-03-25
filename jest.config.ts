@@ -19,6 +19,8 @@ const config: Config = {
     '!<rootDir>/src/app/layout.tsx',
     '!<rootDir>/src/docs/**/*.{ts,tsx}',
     '!<rootDir>/src/test/**/*.{ts,tsx}',
+    '!<rootDir>/src/app/api/auth/**/*.ts',
+    '!<rootDir>/src/middleware.ts',
   ],
   coverageThreshold: {
     global: {

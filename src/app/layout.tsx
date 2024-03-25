@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 
+import ToastProvider from '@/providers/ToastProvider';
+
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -10,7 +12,9 @@ export const metadata: Metadata = {
 const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ToastProvider>{children}</ToastProvider>
+      </body>
     </html>
   );
 };
